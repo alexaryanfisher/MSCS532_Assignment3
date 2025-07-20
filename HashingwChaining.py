@@ -24,7 +24,7 @@ class HashTableChaining:
         return hash(key) % self.capacity
     
     # Add a key-value pair to the hash table.
-    def add(self, key, value):
+    def insert(self, key, value):
         index = self._hash(key)
         chain = self.table[index]
         # Check if the key already exists in the bucket. k = existing key, v = existing value.
@@ -42,11 +42,11 @@ class HashTableChaining:
         print(f"Key '{key}' added with value '{value}' at index {index}.")
 
     # Retrieve the value associated with a given key.
-    def get(self, key):
+    def search(self, key):
         index = self._hash(key)
         chain = self.table[index]
         # Search for the key in the bucket.
-        for k, v in enumerate(chain):
+        for k, v in chain:
             if k == key:
                 # If found, return the value.
                 # Print a message indicating the key was found.
@@ -58,8 +58,8 @@ class HashTableChaining:
         print(f"Key '{key}' not found in the hash table.")
         return None
 
-    # Remove a key-value pair from the hash table.
-    def remove(self, key):
+    # delete a key-value pair from the hash table.
+    def delete(self, key):
         index = self._hash(key)
         chain = self.table[index]
         # Search for the key in the bucket.
@@ -97,25 +97,25 @@ if __name__ == "__main__":
 
     # Use Case 1: Adding key-value pairs.
     print("Use Case 1: Adding key-value pairs")
-    hash_table.add("dog", 10)
-    hash_table.add("cat", 20)
-    hash_table.add("fish", 30)
-    hash_table.add("rabbit", 40)
-    hash_table.add("lizard", 50)
-    hash_table.add("turtle", 60) # May cause a collision with "dog" or "cat".
-    hash_table.add("ferret", 70) # May cause a collision with "fish" or "rabbit".
+    hash_table.insert("dog", 10)
+    hash_table.insert("cat", 20)
+    hash_table.insert("fish", 30)
+    hash_table.insert("rabbit", 40)
+    hash_table.insert("lizard", 50)
+    hash_table.insert("turtle", 60) # May cause a collision with "dog" or "cat".
+    hash_table.insert("ferret", 70) # May cause a collision with "fish" or "rabbit".
     print("\n" + str(hash_table))
 
     # Use Case 2: Retrieving values.
     print("\nUse Case 2: Retrieving values")
-    print("Value for 'cat':", hash_table.get("cat"))
-    print("Value for 'dog':", hash_table.get("dog"))
+    print("Value for 'cat':", hash_table.search("cat"))
+    print("Value for 'dog':", hash_table.search("dog"))
     # Attempt to retrieve a non-existent key.
-    print("Value for 'pig':", hash_table.get("pig"))
+    print("Value for 'pig':", hash_table.search("pig"))
     print("\n" + str(hash_table))  
 
     # Use Case 3: Removing key-value pairs.
     print("\nUse Case 3: Removing key-value pairs")
-    hash_table.remove("lizard")
+    hash_table.delete("lizard")
     print("\n" + str(hash_table))
         
