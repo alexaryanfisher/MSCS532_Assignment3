@@ -10,8 +10,8 @@ Each bucket in the hash table is a list storing key-value pairs.
 
 class HashTableChaining:
     # Initialize the hash table with a specified capacity. Capacity if the initial number of buckets in the hash table.
-    # Default capacity is set to 10.
-    def __init__(self, capacity_size=10):
+    # Default capacity is set to 5.
+    def __init__(self, capacity_size=5):
         self.capacity = capacity_size
         #Create a list of empty lists (buckets) for chaining.
         self.table = [[] for _ in range(self.capacity)]
