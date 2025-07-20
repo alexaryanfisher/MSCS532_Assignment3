@@ -12,8 +12,11 @@ This part of the implementation focused on the implementation of a hash table us
 
 ### Project Deliverables:
 ```RandomizedQuicksort.py``` : Python file containing implementation of Randomized Quicksort with various edge and use cases such as repeared elements, empty arrays, and already sorted arrays.
+
 ```DeterministicQuicksort.py``` : Python file containing implementation of Deterministic Quicksort using the first element of an array. The script contains the comparsion logic and prints running times for both the deterministic and randomized Quicksort.
+
 ```HashingwChaining.py``` : Python file containing a hash table using chaining for collision resolution and some use cases.
+
 ```Analysis Report``` : [TBA] Pending Report containing analysis of average case time complexity for Randomized Quicksort and analysis of how load factor affects performance of search, insert, delete within a hash table as well as strategies for maintaining a low load factor.
 
 ## Summary of Findings
