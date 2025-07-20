@@ -15,7 +15,7 @@ Recurrence Relation Randomized Quicksort
 <br>
 </strong>
 <br>
-![recurrence relation](linktophoto "randomized quicksort recurrence relation")
+![recurrence relation](https://github.com/alexaryanfisher/MSCS532_Assignment3/blob/main/images/recurrencerelation.png))
 
 This simplified form often reflects the balanced split scenario that randomized quicksort achieves on average which mimics the behavior of the balanced divide-and-conquer algorithm that results in <em>O(n log n)</em> based on the Master Theorem (Cormen et al., 2022).
 
@@ -31,7 +31,7 @@ In these use cases, the deterministic quick sort’s performance lessens to <em>
 Deterministic Quicksort, Recursive Tree Visualization
 </strong>
 <br>
-![deterministic recursive tree](linktophoto "deterministic recursive tree")
+![deterministic recursive tree](https://github.com/alexaryanfisher/MSCS532_Assignment3/blob/main/images/deterministic.png)
 
 This linear chain translates into a large increase in execution time. This is especially prominent in larger input arrays. On the other hand, randomized quicksort maintains its <em>O(n log n)</em> performance regardless of the varying inputs.
 
