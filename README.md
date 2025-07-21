@@ -17,7 +17,7 @@ This part of the implementation focused on the implementation of a hash table us
 
 ```HashingwChaining.py``` : Python file containing a hash table using chaining for collision resolution and some use cases.
 
-```Analysis Report.md``` : Pending Report containing analysis of average case time complexity for Randomized Quicksort and analysis of how load factor affects performance of search, insert, delete within a hash table, as well as strategies for maintaining a low load factor.
+```Analysis Report.md``` : Report containing analysis of average case time complexity for Randomized Quicksort and analysis of how load factor affects performance of search, insert, delete within a hash table, as well as strategies for maintaining a low load factor.
 
 ## Summary of Findings
 The empirical tests and theoretical analysis completed within this project provided clear insights into the efficiency and scalability of Randomized Quicksort and Hashing with Chaining. It was shown in the following key features:
